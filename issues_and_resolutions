@@ -3,3 +3,8 @@ Issues and resolution
 Issue: Getting 413 Request Entity too large
 
 Solution: look at your reverse proxy and see if there is a limit or default of 128KB is being used
+
+Issue : Cannot connect to remote mongodb even after enabling firewall
+Solution:Look at the bindIP
+bind_ip =0.0.0.0
+port = 27017
